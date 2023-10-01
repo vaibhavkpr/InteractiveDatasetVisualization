@@ -1,6 +1,6 @@
 # Fuel Economy Data Visualization Project
 
-This project explores various aspects of fuel economy using the Fuel Economy Dataset from Kaggle. The data is visualized interactively on a website to provide insights into different driving conditions, annual fuel economy and costs, car engine specifications, and popular vehicle makes over the years.
+This project explores various aspects of fuel economy using the Fuel Economy Dataset with 38500 Entries & 81 Attributes (make, fuel type, annual fuel costs, luggage size, engine specifications, etc.). The data is visualized interactively on a website to provide insights into different driving conditions, annual fuel economy and costs, car engine specifications, and popular vehicle makes over the years.
 
 ## Topics Explored
 
