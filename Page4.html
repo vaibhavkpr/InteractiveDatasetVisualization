@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- Page head - Browser title-->
+    <title>Impact of driving conditions</title>
+    <!-- D3 Header -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/customStyle.css" />
+    <link rel="stylesheet" href="/slider.css" />
+    <!-- The website JavaScript file -->
+    <script src="/p4_script.js" defer></script>
+    <!-- Color scale -->
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  </head>
+  <!-- Page Content-->
+  <body>
+    <section id="s1">
+      <div class="wrapper">
+        <div id="PAGE_WRAPPER">
+          <!-- HEADER CONTENTS -->
+          <div id="HEADER_CONTAINER">
+            <h1 class="TITLE">
+              What are the 5 biggest counted vehicle makes for each year?
+            </h1>
+          </div>
+          <button class="back_btn" id="back_btn">
+            <img
+              src="https://cdn.glitch.global/c035c5b7-ccec-41fe-8532-ff655a2685ef/BackButton.svg?v=1678951647576"
+              alt="Back_btn Image"
+            />
+          </button>
+
+          <!-- Absolute Chart Container-->
+          <div id="MULTICHART_CONTAINER">
+            <svg id="PIE_CONTAINER"></svg>
+          </div>
+
+          <!-- Bottom Selection-->
+          <div>
+            <h3 id="rangeValue">range value:</h3>
+            <div class="slidecontainer">
+              <input
+                type="range"
+                min="0"
+                max="33"
+                value="0"
+                class="slider"
+                id="myRange"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- More Button -->
+      <button class="more_btn2" id="more_btn">
+        <img
+          src="https://cdn.glitch.global/c035c5b7-ccec-41fe-8532-ff655a2685ef/more_button.svg?v=1681620703660"
+          alt="More_Info_Button"
+        />
+      </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="s2">
+      <!-- Options Section -->
+      <div class="wrapper2">
+        <div class="content" role="main">
+          <h1 class="title">Instructions</h1>
+          <text class="about_text">
+            The interactive line plot allows us to investigate which vehicle
+            makes are most counted over time in the dataset. You can interact by
+            moving the slider underneath the pie chart to see how the share is
+            distributed for the top 5 makes in that year.
+          </text>
+          <h1 class="title">Retrospection</h1>
+          <text class="about_text">
+            The dataset reveals that American cars held a significant market
+            share in the early 1900s, but towards the end of the century,
+            European and Japanese cars gained more popularity. However, it is
+            important to note that this conclusion is based solely on vehicle
+            registrations and not on a comprehensive dataset like Carfax.
+          </text>
+
+          <!-- Less Button -->
+          <button class="more_btn" id="less_btn">
+            <img
+              src="https://cdn.glitch.global/c035c5b7-ccec-41fe-8532-ff655a2685ef/less_btn.svg?v=1680715155338"
+              alt="Less_Info_Button"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

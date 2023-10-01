@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- Page head - Browser title-->
+    <title>Impact of driving conditions</title>
+    <!-- D3 Header -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/customStyle.css" />
+    <!-- The website JavaScript file -->
+    <script src="/p1_script.js" defer></script>
+  </head>
+
+  <!-- Page Body-->
+  <body>
+    <!-- Options Section -->
+    <section id="s1">
+      <div class="wrapper">
+        <div id="PAGE_WRAPPER">
+          <!-- Header Contents-->
+          <div id="HEADER_CONTAINER">
+            <h1 class="p1_title">
+              How different driving conditions can impact your fuel economy?
+            </h1>
+            <button class="back_btn" id="back_btn">
+              <img
+                src="https://cdn.glitch.global/c035c5b7-ccec-41fe-8532-ff655a2685ef/BackButton.svg?v=1678951647576"
+                alt="Back_btn Image"
+              />
+            </button>
+          </div>
+
+          <!-- Absolute Chart Container-->
+          <div id="MULTICHART_CONTAINER">
+            <div id="ButtonContainer">
+              <button id="city">City</button>
+              <button id="highway">Highway</button>
+            </div>
+            <svg id="BAR_CONTAINER"></svg>
+          </div>
+
+          <!-- Bottom Selection-->
+          <div>
+            <!-- Vehicle Class Filter Bar-->
+            <div class="vehicleClassBox" id="class_filter"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Button -->
+      <button class="more_btn2" id="more_btn">
+        <img
+          src="https://cdn.glitch.global/c035c5b7-ccec-41fe-8532-ff655a2685ef/more_button.svg?v=1681620703660"
+          alt="More_Info_Button"
+        />
+      </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="s2">
+      <!-- Options Section -->
+      <div class="wrapper2">
+        <div class="content" role="main">
+          <h1 class="title">Instructions</h1>
+          <text class="about_text">
+            The interactive bar plot allows us to investigate the relationship
+            between various vehicle classes and their drive options to their
+            fuel economy performance. You can select between the 6 vehicle
+            classes and toggle between City / Highway fuel economy (measured in
+            miles per gallon).
+          </text>
+          <h1 class="title">Retrospection</h1>
+          <text class="about_text">
+            From the plot we can extract relationships such as smaller vehicles classes and 2-wheel / front wheel drive options in general result in better Fuel economy scores in both city and highway.
+          </text>
+
+          <!-- Less Button -->
+          <button class="more_btn" id="less_btn">
+            <img
+              src="https://cdn.glitch.global/c035c5b7-ccec-41fe-8532-ff655a2685ef/less_btn.svg?v=1680715155338"
+              alt="Less_Info_Button"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

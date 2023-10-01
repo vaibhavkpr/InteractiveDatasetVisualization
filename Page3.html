@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- Page head - Browser title-->
+    <title>Impact of driving conditions</title>
+    <!-- D3 Header -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="/p3_script.js" defer></script>
+  </head>
+  <!-- Page Content-->
+  <body>
+    <section id="s1">
+      <div class="wrapper">
+        <div class="content" role="main">
+          <h1 class="p1_title">
+            How do different car engine specifications impact fuel economy?
+          </h1>
+
+          <button class="back_btn" id="back_btn">
+            <img
+              src="https://cdn.glitch.global/c035c5b7-ccec-41fe-8532-ff655a2685ef/BackButton.svg?v=1678951647576"
+              alt="Back_btn Image"
+            />
+          </button>
+
+          <div id="MAIN" class="relative">
+            <svg id="SVG_CONTAINER" height="500px" width="950px"></svg>
+          </div>
+        </div>
+
+        <label
+          class="filterheading"
+          style="position: absolute; top: 390px; right: 150px"
+          >Fuel Economy Metric</label
+        >
+        <select
+          class="enginespecfilter"
+          id="y_axis_filter"
+          style="position: absolute; top: 420px; right: 50px"
+        >
+          <option value="Save or Spend (5 Year)">Save or Spend ($)</option>
+          <option value="Annual Fuel Cost (FT1)">
+            Annual City Driving Fuel Costs ($)
+          </option>
+          <option value="Annual Fuel Cost (FT2)">
+            Annual Highway Driving Fuel Costs ($)
+          </option>
+          <option value="Combined MPG (FT1)">Fuel Economy (MPG)</option>
+        </select>
+
+        <label
+          class="filterheading"
+          style="position: absolute; top: 540px; right: 150px"
+          >Engine Specification</label
+        >
+        <select
+          class="enginespecfilter"
+          id="x_axis_filter"
+          style="position: absolute; top: 570px; right: 50px"
+        >
+          <option value="Engine Cylinders">Engine Cylinders</option>
+          <option value="Engine Displacement">Engine Displacement</option>
+          <option value="Fuel Type">Fuel Type</option>
+          <option value="Transmission">Transmission</option>
+          <option value="Drive">Drive</option>
+        </select>
+      </div>
+      <!-- More Button -->
+      <button class="more_btn2" id="more_btn">
+        <img
+          src="https://cdn.glitch.global/c035c5b7-ccec-41fe-8532-ff655a2685ef/more_button.svg?v=1681620703660"
+          alt="More_Info_Button"
+        />
+      </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="s2">
+      <!-- Options Section -->
+      <div class="wrapper2">
+        <div class="content" role="main">
+          <h1 class="title">Instructions</h1>
+          <text class="about_text">
+            The interactive line plot allows us to investigate the relationship
+            between various engine specifications and fuel economy metrics. You
+            can select the fuel economy metric of interest as the y-axis, such
+            as annual driving cost or fuel economy (measured in miles per
+            gallon), and choose an engine specification to analyze by selecting
+            the respective drop-down filters, such as engine cylinders, engine
+            displacement, or fuel type.
+          </text>
+          <h1 class="title">Retrospection</h1>
+          <text class="about_text">
+            From the plot we can extract relationships such as lower engine
+            cylinders and displacements result in better Fuel economy and Save
+            or Spend ratings.
+          </text>
+
+          <!-- Less Button -->
+          <button class="more_btn" id="less_btn">
+            <img
+              src="https://cdn.glitch.global/c035c5b7-ccec-41fe-8532-ff655a2685ef/less_btn.svg?v=1680715155338"
+              alt="Less_Info_Button"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

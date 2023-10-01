@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- Page head - Browser title-->
+    <title>Impact of driving conditions</title>
+    <!-- D3 Header -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/customStyle.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="/p2_script.js" defer></script>
+    <script src="/bottom_bar.js" defer></script>
+  </head>
+  <!-- Page Content-->
+  <body>
+    <section id="s1">
+      <div class="wrapper">
+        <div id="PAGE_WRAPPER">
+          <!-- Header Contents-->
+          <div id="HEADER_CONTAINER">
+            <h1 class="p1_title">
+              How does fuel economy impact annual fuel cost?
+            </h1>
+            <button class="back_btn" id="back_btn">
+              <img
+                src="https://cdn.glitch.global/c035c5b7-ccec-41fe-8532-ff655a2685ef/BackButton.svg?v=1678951647576"
+                alt="Back_btn Image"
+              />
+            </button>
+          </div>
+
+          <!-- Absolute Chart Container-->
+          <div id="MULTICHART_CONTAINER">
+            <svg id="SVG_CONTAINER1"></svg>
+            <svg id="SVG_CONTAINER2"></svg>
+            <svg id="SVG_CONTAINER3"></svg>
+            <svg id="SVG_CONTAINER4"></svg>
+            <svg id="SVG_CONTAINER5"></svg>
+            <svg id="SVG_CONTAINER6"></svg>
+          </div>
+
+          <!-- Bottom Selection-->
+          <div>
+            <h3 id="EXPECTED">
+              Hover A Dot to see the Cost and Recommended Vehicle
+            </h3>
+            <!-- Vehicle Class Filter Bar-->
+            <div class="vehicleClassBox" id="class_filter"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Button -->
+      <button class="more_btn2" id="more_btn">
+        <img
+          src="https://cdn.glitch.global/c035c5b7-ccec-41fe-8532-ff655a2685ef/more_button.svg?v=1681620703660"
+          alt="More_Info_Button"
+        />
+      </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="s2">
+      <!-- Options Section -->
+      <div class="wrapper2">
+        <div class="content" role="main">
+          <h1 class="title">Instructions</h1>
+          <text class="about_text">
+            Hover A Dot to see the Cost and Recommended Vehicle. The Dot represents the average cost for all vehicles of that fuel economy score. The recommended vehicle is the lowest cost vehicle of that fuel economy score.
+          </text>
+          <h1 class="title">Retrospection</h1>
+          <text class="about_text">
+            Some results that can be obtained from this chart is that annual costs trend linearly to fuel score and generally Forward Wheel Drive is significantly cheaper compared to other drive types.
+          </text>
+
+          <!-- Less Button -->
+          <button class="more_btn" id="less_btn">
+            <img
+              src="https://cdn.glitch.global/c035c5b7-ccec-41fe-8532-ff655a2685ef/less_btn.svg?v=1680715155338"
+              alt="Less_Info_Button"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
