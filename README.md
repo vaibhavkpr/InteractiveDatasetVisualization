@@ -22,7 +22,7 @@ An interactive line plot explores the popularity of vehicle makes over time. Use
 
 ## Website Interface
 
-The website provides a clean interface with a menu for users to select specific topics to explore. Interactive visualizations are created using JavaScript to allow users to interact with the data effectively.
+The website provides a clean interface with a menu for users to select specific topics to explore. Interactive visualizations are created using JavaScript & css to allow users to interact with the data effectively.
 
 ## How to Use
 
