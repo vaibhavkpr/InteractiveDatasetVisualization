@@ -126,10 +126,9 @@ let setup6 = function (dataPath) {
 
 let checkNull = function(groupName)
 {
-  if(groupName >1)
-    {
+  if(groupName >1) {
       return groupName
-    }
+  }
   return groupName
 }
 
@@ -144,11 +143,11 @@ let scatterChart = function (data, svg) {
   //List of groups
       const allGroup = ["Forward", "Four", "All", "Rear" ];
       const dataReady = allGroup.map (function(grpName){
-      return {
-        name: grpName,
-        values: data.map(function(d) {
-          return {fuelScore: d["Fuel Economy"], value: checkNull(d[grpName]), recommended: d["Recommended " + grpName]};
-        })
+        return {
+          name: grpName,
+          values: data.map(function(d) {
+            return {fuelScore: d["Fuel Economy"], value: checkNull(d[grpName]), recommended: d["Recommended " + grpName]};
+          })
         };
       });
   
