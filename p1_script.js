@@ -2,7 +2,6 @@ console.log("Hello from P1");
 
 // Global Vars (Set to their initial defaults)
 var classSelect = 1;
-// var selectedVehicleMake = 1;
 
 var vehicleTypes = ["Minicompact", "Midsize", "Two Seaters", "Sport Utility", "Truck", "Van", "Special"];
 var yAxisToggle = ["City MPG (FT1)", "Highway MPG (FT1)"]
