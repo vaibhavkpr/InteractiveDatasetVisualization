@@ -33,5 +33,3 @@ The website provides a clean interface with a menu for users to select specific 
 ## Conclusion
 
 This project offers valuable insights into fuel economy trends based on different parameters. The interactive nature of the visualizations enhances user engagement and understanding of the dataset.
-
-_Note: The conclusions drawn are based on the available dataset and should be interpreted considering the dataset's scope and limitations._
