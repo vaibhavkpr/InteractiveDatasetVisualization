@@ -401,54 +401,6 @@ let linePlot = function (data, svg) {
   }
 };
 
-// Filter Data
-// let filteredData = data.filter(
-//   (d) =>
-//     d[yAxisSelect] != null &&
-//     d[xAxisSelect] != null &&
-//     d[yAxisSelect] != "" &&
-//     d[xAxisSelect] != "" &&
-//     !isNaN(d[xAxisSelect])
-// );
-
-// // create path element
-// chart
-//   .append("path")
-//   .attr("fill", "none")
-//   .attr("stroke", "steelblue")
-//   .attr("stroke-width", 2)
-//   .attr("d", function () {
-//     return d3
-//       .line()
-//       .x((d) => xScale(parseFloat(d["Engine Cylinders"])))
-//       .y((d) => yScale(parseFloat(d["Save or Spend (5 Year)"])))(filteredData);
-//   });
-
-//TODO: Create the circles in the scatter plot
-// let circles = chart
-//   .selectAll("circle")
-//   .data(filteredData)
-//   .enter()
-//   .append("circle")
-//   .attr("class", (d) => d["Engine Cylinders"])
-//   .attr("cx", (d, i) => xScale(i))
-//   .attr("cy", (d) => yScale(d["Save or Spend (5 Year)"]))
-//   .attr("r", 5)
-//   .attr("fill", "steelblue");
-
-// Plot Line connecting points
-// chart
-//   .append("path")
-//   .attr("fill", "none")
-//   .attr("stroke", "steelblue")
-//   .attr("stroke-width", 2)
-//   .attr("d", function () {
-//     return d3
-//       .line()
-//       .x((d) => xScale(parseFloat(d.key)))
-//       .y((d) => yScale(d.value))(avgData);
-//   });
-
 // Dataset information button
 var more_btn = document.getElementById("more_btn");
   more_btn.addEventListener("click", function() {
