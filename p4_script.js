@@ -167,39 +167,6 @@ function update(data) {
     .data(data_ready)
 
   // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
-    
- 
-  
-  
-  u
-    .join('path')
-     .transition()
-     .duration(1000)
-    .attr('d', d3.arc()
-      .innerRadius(0)
-      .outerRadius(radius)
-    )
-    .attr('fill', function(d){ return(color(d.data[0])) })
-    .attr("stroke", "#1e1e1e")
-    .style("stroke-width", "2px")
-    .style("opacity", 1)
-  
-  svg.selectAll("text")
-    .data(data_ready)
-   .join('text')
-    .transition()
-    .duration(1000)
-  .text(function(d){ return "grp " + d.data[0]})
-  .attr("transform", function(d) { return `translate(${d3.arc().innerRadius(0).outerRadius(radius).centroid(d)})`})
-  .style("text-anchor", "middle")
-  .style("font-size", 17)
-  .style("z-index", 100)
-  
-
-    
-}
-// Initialize the plot with the first dataset
-//update(data1)
 */
 // Dataset information button
 var more_btn = document.getElementById("more_btn");
