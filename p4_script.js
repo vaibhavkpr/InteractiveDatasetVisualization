@@ -145,28 +145,6 @@ var color = d3.scaleOrdinal()
   .domain(["a", "b", "c", "d", "e", "f"])
   .range(d3.schemeDark2);
 
-
-
-
-
-
-
-
-
-// A function that create / update the plot for a given variable:
-function update(data) {
-
-  // Compute the position of each group on the pie:
-  const pie = d3.pie()
-    .value(function(d) {return d[1]; })
-    .sort(function(a, b) { return d3.ascending(a.key, b.key);} ) // This make sure that group order remains the same in the pie chart
-  const data_ready = pie(Object.entries(data))
-
-  // map to data
-  const u = svg.selectAll("path")
-    .data(data_ready)
-
-  // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
 */
 // Dataset information button
 var more_btn = document.getElementById("more_btn");
