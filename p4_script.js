@@ -128,24 +128,7 @@ let pieChart = function (data, svg) {
         });
     });*/
 };
-//PIECHART
-//dimension of our workspace
 
-/*
-// append the svg object to the div called 'my_dataviz'
-  d3.select("#PIE_CONTAINER")
-  .append("svg")
-    .attr("width", width)
-    .attr("height", height)
-  .append("g")
-    .attr("transform", `translate(${width / 2}, ${height / 2})`);
-
-// set the color scale
-var color = d3.scaleOrdinal()
-  .domain(["a", "b", "c", "d", "e", "f"])
-  .range(d3.schemeDark2);
-
-*/
 // Dataset information button
 var more_btn = document.getElementById("more_btn");
   more_btn.addEventListener("click", function() {
